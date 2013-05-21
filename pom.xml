@@ -154,6 +154,20 @@
             <version>1.31</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.foursquare</groupId>
+            <artifactId>fongo</artifactId>
+            <version>1.0.8</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- needed by fongo -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.13</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>

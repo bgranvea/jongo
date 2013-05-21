@@ -35,7 +35,7 @@ public class MongoBsonFactory extends BsonFactory {
     }
 
     @Override
-    protected BsonParser _createJsonParser(InputStream in, IOContext ctxt) throws IOException {
+    protected BsonParser _createJsonParser(InputStream in, IOContext ctxt) {
         BsonParser p = new MongoBsonParser(ctxt, _parserFeatures, _bsonParserFeatures, in);
         ObjectCodec codec = getCodec();
         if (codec != null) {
